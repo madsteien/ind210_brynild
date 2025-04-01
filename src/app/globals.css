@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --candy-red: #ef4444;
+  --candy-dark-red: #b91c1c;
+  --candy-white: #ffffff;
+  --candy-cream: #fef2f2;
+  --candy-accent: #f87171;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Candy-themed styles */
+.candy-shadow {
+  box-shadow: 0 8px 16px rgba(239, 68, 68, 0.2);
+}
+
+.candy-button {
+  background: linear-gradient(to right, var(--candy-red), var(--candy-dark-red));
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.candy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Playful animations for candy elements */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* Left to right carousel animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.animate-wobble {
+  animation: wobble 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--candy-cream);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--candy-red);
+  border-radius: 10px;
+  border: 2px solid var(--candy-cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--candy-dark-red);
+}

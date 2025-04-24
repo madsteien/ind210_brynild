@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 import React, { Suspense } from 'react';
@@ -9,9 +8,6 @@ const ChatWidget = dynamic(() => import('./Chat/ChatWidget'), {
   ssr: false,
   loading: () => <div className="fixed bottom-4 right-4 p-3 bg-white text-red-600 rounded-full shadow-lg">...</div>
 });
-=======
-import React from 'react';
->>>>>>> 8a5296e18f960ccf73f48c1a4cd1b00d4d18a034
 
 export default function Footer() {
   return (

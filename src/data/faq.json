@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "question": "Hva er leveringstiden for varer?",
+    "answer": "Leveringstid er vanligvis 2-4 virkedager etter bestilling. Ved bestillinger over kr 500 får du gratis levering."
+  },
+  {
+    "id": "2",
+    "question": "Hvilke fraktkostnader har dere?",
+    "answer": "Vi har en fast fraktkostnad på kr 59 for bestillinger under kr 500. For bestillinger over kr 500 er frakten gratis."
+  },
+  {
+    "id": "3",
+    "question": "Informasjon om allergener i produktene deres?",
+    "answer": "Alle våre produkter er merket med allergener. Du finner detaljert allergeninformasjon på hvert produkts side. Mange av våre produkter inneholder melk, gluten, og kan inneholde spor av nøtter."
+  },
+  {
+    "id": "4",
+    "question": "Hvilke betalingsmetoder aksepterer dere?",
+    "answer": "Vi aksepterer Visa, Mastercard, Vipps, og PayPal. Alle betalinger er sikret med kryptering."
+  },
+  {
+    "id": "5",
+    "question": "Kan jeg returnere varer?",
+    "answer": "For matvarer har vi dessverre ikke returrett av hygieniske årsaker. Ved produktfeil eller skade under forsendelse, ta kontakt med kundeservice innen 14 dager."
+  },
+  {
+    "id": "6",
+    "question": "Har dere sukkerfrie alternativer?",
+    "answer": "Ja, vi har flere sukkerfrie alternativer i vårt sortiment. Se etter 'Sukkerfri' i produktbeskrivelsen."
+  },
+  {
+    "id": "7",
+    "question": "Kan jeg endre eller kansellere bestillingen min?",
+    "answer": "Bestillinger kan endres eller kanselleres innen 1 time etter bestilling. Ta kontakt med kundeservice umiddelbart."
+  },
+  {
+    "id": "8",
+    "question": "Hvor lenge holder godteriet seg?",
+    "answer": "Våre produkter har en holdbarhet på minst 6 måneder fra produksjonsdato. Holdbarhetsdato er alltid tydelig merket på pakningene."
+  }
+]

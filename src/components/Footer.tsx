@@ -1,5 +1,13 @@
-import React from 'react';
+"use client";
 
+import React, { Suspense } from 'react';
+import dynamic from 'next/dynamic';
+
+// Simpler dynamic import
+const ChatWidget = dynamic(() => import('./Chat/ChatWidget'), { 
+  ssr: false,
+  loading: () => <div className="fixed bottom-4 right-4 p-3 bg-white text-red-600 rounded-full shadow-lg">...</div>
+});
 
 export default function Footer() {
   return (
@@ -63,6 +71,9 @@ export default function Footer() {
           <p className="text-white/60">© 2025 Brynild. Alle rettigheter reservert.</p>
         </div>
       </div>
+      <Suspense fallback={null}>
+        <ChatWidget />
+      </Suspense>
     </footer>
   );
 }
